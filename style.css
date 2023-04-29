@@ -28,12 +28,17 @@ body{
     border-radius: 50%;  
     margin-top: 20px;
 
+
+}
+nav .bx{
+    display: none;
 }
 nav {
     display:flex;
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
+    
 }
 nav ul li{
     display: inline-block;
@@ -393,10 +398,7 @@ flex-basis: 35%;
 #projects{
     padding: 30px 2px;
     color:grey;
-    background-color: black;
-   
-    
-
+    background-color: black;   
 }
 .projects-list{
     display: grid;
@@ -438,7 +440,7 @@ flex-basis: 35%;
     
 }
 .projects-list div:hover{
-    background-color:crimson;
+    background-color:brown;
     transform: translateY(-10px);
     
 }
@@ -448,16 +450,18 @@ flex-basis: 35%;
 #skills{
     padding: 30px;
     background-color: black;
-    color: crimson;
+    color: brown;
     
     
 }
 #sub-title{
   font-size: 20px;
   font-family: 'Times New Roman', Times, serif;
-  font-weight: 300;
+  font-weight: 100;
   align-items: center;
   text-align: center;
+  text-decoration: underline;
+  color: brown
   
 }
 .skill-list{
@@ -484,17 +488,400 @@ flex-basis: 35%;
     transition: background 0.5s transform 0.5s;
     animation: slidein ease 0.4s;
     transition: 0.5s;
+    color: white;
 
 }
 .skill-list p:hover{
     
-    color: white;
+    color:brown;
     align-items: center;  
+}
+/*------certification section------*/
+
+
+#slide_heading{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    font-weight: 50;
+    color:brown;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+    text-decoration: underline; 
+    align-items: center;
+    background-color: black;
+    
+   
+}
+#slide_img{
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+   
+
+}
+.sliding{
+    width: 85vmin;
+    overflow: hidden;
+    border: 10px solid white;
+    border-radius: 8px;
+    background-color: black;
+}
+img{
+    width: 100%;
+}
+.slider{
+    width: 100%;
+    display: flex;
+    animation: slide 10s infinite;
+}
+@keyframes slide {
+    0%{
+        transform: translateX(0);
+    }
+   
+    25%{
+        transform: translateX(0);
+    }
+    
+    50%{
+        transform: translateX(-100%);
+    }
+   
+    75%{
+        transform: translateX(-100%);
+    }
+   
+    100%{
+        transform: translateX(-200%);
+    }
+    
+}
+
+/*---------css for small screen------------*/
+@media only screen and (max-width:600px)
+{
+    #header{
+        background-image: url(./images/mob.jpg);
+    } 
+    .logo{
+        width: 100px;
+        margin-left: 1px;
+        border-radius: 19px;
+    }
+    .header-text{
+        font:20px;
+        margin-top: 20px;
+    }  
+    .header-text h1{
+        font-size: 30px;
+    }
+    #graduate {
+        margin-top: 30px;
+        font-size: 10px;
+        color:#fff;
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        padding: 10px 20px;
+        border:3px solid brown;
+        border-radius: 3px;
+        margin-right: 20px;
+        width:50%;
+        height:40px;
+        padding: 10px 22px;
+        background-color:transparent;
+        background-position: left;  
+        box-shadow: 1px 1px 20px brown;
+    }
+    .header-text h1 span{
+        font-size: 29px;
+        color:transparent;
+        -webkit-text-stroke: 1px white;
+        background:url(images/back.png);
+        -webkit-background-clip: text;
+        background-position: 0 0;
+        animation: back 20s linear infinite;
+        margin-top: 30px;
+        
+    }
+    #head2{
+        font-size:15px;
+        margin-bottom: 8px;
+        margin-top: 50px;
+        width: 40%;
+        font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        color:brown;
+        animation:example 6s ;
+        animation-timing-function:cubic-bezier(0.95, 0.95, 0.95, 0.95);
+        animation-iteration-count:1;
+    }
+    .jobs{
+        display: none;
+    }
+   
+    /*----------about section------*/
+     
+    #about{
+    
+        background-color:black;
+        padding:15px;
+    }
+    .about-col-1 img{
+        margin-top: -30px;
+        width:150%;
+        height: 150%;
+        border-radius: 20px;
+        animation: zoom 5s ease-in-out;
+        transition-duration: 5s;
+    }
+   
+    .about-col-2 h1{
+        font-size:25px;
+        font-weight:10px;
+        margin-top: 50px;
+        font-family:'Times New Roman', Times, serif;
+        display: flex;
+        animation: zoomin 3s ease-in;
+        transition-duration:10s;
+       
+    }
+    #personal-details-name{
+        margin-top: 20px;
+        font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-size: 15px;
+        color: brown;
+        animation: zoomin 2s ease-in;
+        transition-duration: 10s;
+    }
+    #personal-details-address{
+        margin-top: 20px;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-size: 15px;
+        color:brown;
+        animation: zoomin 2s ease-in;
+        transition-duration: 10s;
+    }
+    #personal-details-mail{
+        margin-top: 20px;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-size: 15px;
+        color: brown;
+        animation: zoomin 2s ease-in;
+        transition-duration: 10s;
+    }
+    #personal-details-number{
+        margin-top: 20px;
+        margin-right: 0;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-size: 15px;
+        color: brown;
+        animation: zoomin 2s ease-in;
+        transition-duration: 10s;
+    }
+    .social-media a{
+      display: inline-flex;
+      width: 30px;
+      height:50px;
+      background-color: transparent;
+      border: 2px solid brown;
+      border-radius: 50%;
+      font-size: 15px;
+      color: brown;
+      text-decoration: none;
+      padding: 2px;
+      align-items: center;
+      justify-content: center;
+      margin: 40px 40px 20px 3px; 
+     box-shadow: 1px 1px 20px brown;
+     animation: slidetop 1s ease-in;
+     animation-duration: 4s;
+    }
+    #resume {
+        font-size:20px;
+        font-family: 'Times New Roman', Times, serif;
+        color:brown;
+        border-radius: 20px;
+        padding: 10px;
+        margin: 8px 20px 8px 0;
+        border-color: brown;
+        background-color: transparent;  
+        box-shadow: 1px 1px 20px brown;
+        letter-spacing: 2px;
+        animation: slidetop 1s ease-in;
+        animation-duration: 4s;
+    }
+    /*--------projects section-------*/
+    
+    .projects-list{
+        display: grid;
+        grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+        grid-gap: 30px;
+        margin-top: 10px;
+    }
+    .projects-list div{
+        padding: 8px;
+        margin-top: 2px;
+        grid-gap: 7px;
+        background-color:grey;
+        color:black;
+        font-size: 10px;
+        font-family: 'Times New Roman', Times, serif;
+        font-weight: 100px;
+        border-right: 10px;
+        border-radius: 10px;
+        transition: background 0.5s,transform 0.5s;
+    }
+    .projects-list div h2{
+        font-size: 14px;
+        padding: 8px;  
+        text-decoration: underline;
+    }
+    .sub-title{
+        font-size: 30px;
+        align-items: center;
+        text-align: center;
+        padding: 5px;
+        text-decoration:underline;  
+        
+    }
+    .projects-list div p{
+        padding: 7px;
+        font-size: 10px;  
+        
+     }
+     /*---------skills-------*/
+     .skill-list{
+        display: grid;
+        grid-template-columns: repeat(auto-fit,minmax(25px,2fr));
+        grid-gap: 90px;
+        margin-top: 30px;
+       
+    }
+    .skill-list p{
+        font-size: 15px;
+        font-family: 'Times New Roman', Times, serif;
+        font-weight: 450;
+        padding:10px 0 0 0;
+        transition: background 0.5s transform 0.5s;
+        animation: slidein ease 0.4s;
+        transition: 0.5s;
+    
+    }
+    .skill-list img{
+        width:70px;
+        height: 70px;
+        border-radius: 20px;
+        margin-bottom: 20px;
+        transition:  transform 0.5s;    
+    }
+    #img_sql{
+        margin-left: 130%;
+    }
+    #sql{
+        margin-left: 142%;
+    }
+    #html{
+        margin-left: 10px;
+    }
+    #css{
+        margin-left: 10px;
+    }
+    /*------------certifications---------*/
+    
+    #slide_heading{
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 20px;
+        font-weight: 50;
+        color:brown;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 40px;
+        text-decoration: underline; 
+        align-items: center;
+        background-color: black;
+        
+       
+    }
+    #slide_img{
+        background-color: black;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+       
+    
+    }
+    .sliding{
+        width: 85vmin;
+        overflow: hidden;
+        border: 10px solid white;
+        border-radius: 8px;
+        background-color: black;
+    }
+    img{
+        width: 100%;
+    }
+    .slider{
+        width: 100%;
+        display: flex;
+        animation: slide 10s infinite;
+    }
+    @keyframes slide {
+        0%{
+            transform: translateX(0);
+        }
+       
+        25%{
+            transform: translateX(0%);
+        }
+        
+        50%{
+            transform: translateX(-100%);
+        }
+       
+        75%{
+            transform: translateX(-100%);
+        }
+       
+        100%{
+            transform: translateX(-200%);
+        }  
+    
+
+    }
+    nav .bx{
+        display: block;
+        font-size: 40px;
+    }
+    nav ul{
+        background-color:crimson;
+        position: fixed;
+        top: 0;
+        right: -200px;
+        width: 165px;
+        height: 100vh;
+        
+        padding-top: 50px ;
+        padding-left: 0px;
+        transition: right 1s;
+        
+    }
+    nav ul li{
+        display: block;
+        margin: 25px;
+    }
+    nav ul .bx{
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        cursor: pointer;
+    }
 }
 
 
 
 
-
- 
-   

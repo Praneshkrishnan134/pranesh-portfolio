@@ -14,15 +14,18 @@
         <div class="container">
              <nav>
                  <img src="images/praneshlogo.jpg" class="logo" >
-                 <ul>
+                 <ul id="side_menu">
                     <li><a href="#header">HOME</a></li>
                     <li><a href="#about">ABOUT</a></li>
                     <li><a href="#projects">PROJECTS</a></li>
                     <li><a href="#skills">SKILLS</a></li>
-                    <li><a href="#">CERTIFICATIONS</a></li>
+                    <li><a href="#slide_heading">CERTIFICATIONS</a></li>
+                    <i class="bx bx-x" onclick="close_menu()"></i>
                  </ul>
+                 
+                 <i class='bx bx-menu'onclick="open_menu()"></i>
              </nav>
-            <div class="header-text">
+             <div class="header-text">  
                
                  <h1>HI! I AM <br><span>PRANESH KRISHNAN</span>
                  </h1>
@@ -60,7 +63,7 @@
                     <a href="http://www.linkedin.com/in/pranesh-krishnan-07197323b"><i class='bx bxl-linkedin'></i></a>
                     
                 </div>
-                <button id="resume"><a href="./pranesh resume updated.pdf" download>DOWNLOAD CV<i class='bx bx-download bx-tada'></i></button></a>
+                <button id="resume"><a href="./images/updated pranesh resume.pdf" download>DOWNLOAD CV<i class='bx bx-download bx-tada'></i></button></a>
             </div>
         </div>
     </div>
@@ -113,12 +116,35 @@
                 <p id="python">PYTHON</p>
                 </div>
                 <div>
-                    <img src="./images/sql.jpg" alt=""> 
+                    <img src="./images/sql.jpg" alt="" id="img_sql"> 
                     <p id="sql">MYSQL</p>
                 </div>
             </div>
         </div>
     </div>
-</body>
+    <!------certification---->
+    
+    <div id="slide_heading">
+        <h1>CERTIFICATIONS</h1>
+    </div>
+    <div id="slide_img">
+      <div class="sliding">
+         <div class="slider">
+            <img src="./images/sql certificate.jpg" >
+            <img src="./images/python certificate.jpg" >
+            <img src="./images/html.jpg" >
+         </div>
+      </div>
+    </div>
+<script>
+    var sidemenu=document.getElementById("side_menu");
 
+function open_menu(){
+    sidemenu.style.right=0;
+}
+function close_menu(){
+    sidemenu.style.right="-200px";
+}
+</script>
+</body>
 </html>
