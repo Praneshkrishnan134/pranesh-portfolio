@@ -134,8 +134,8 @@ nav ul li a:hover::after{
  }   
 
 #head2{
-    font-size: 30px;
-    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 15px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     color:brown;
     animation:example 6s ;
     animation-timing-function:cubic-bezier(0.95, 0.95, 0.95, 0.95);
@@ -590,7 +590,7 @@ img{
         border:3px solid brown;
         border-radius: 3px;
         margin-right: 20px;
-        width:50%;
+        width:75%;
         height:40px;
         padding: 10px 22px;
         background-color:transparent;
@@ -609,7 +609,7 @@ img{
         
     }
     #head2{
-        font-size:15px;
+        font-size:12px;
         margin-bottom: 8px;
         margin-top: 50px;
         width: 40%;
@@ -633,7 +633,7 @@ img{
     .about-col-1 img{
         margin-top: -30px;
         width:150%;
-        height: 150%;
+        height: 130%;
         border-radius: 20px;
         animation: zoom 5s ease-in-out;
         transition-duration: 5s;
@@ -758,7 +758,7 @@ img{
         display: grid;
         grid-template-columns: repeat(3, 3fr);
         grid-auto-rows: minmax(100px, auto);
-        grid-gap: 10px;
+        grid-gap: 15px;
         margin-top: 30px;
        
     }
@@ -766,10 +766,11 @@ img{
         font-size: 15px;
         font-family: 'Times New Roman', Times, serif;
         font-weight: 450;
-        padding:10px 0 0 0;
+        padding:8px 5px 5px 2px;
         transition: background 0.5s transform 0.5s;
         animation: slidein ease 0.4s;
         transition: 0.5s;
+
     
     }
     .skill-list img{
@@ -777,19 +778,19 @@ img{
         height: 40px;
         border-radius: 20px;
         margin-bottom: 20px;
-        transition:  transform 0.5s;    
+        transition:  transform 0.2s;    
     }
     #img_sql{
-        margin-left: 130%;
+        margin-left: 150%;
     }
     #sql{
-        margin-left: 142%;
+        margin-left: 10%;
     }
     #html{
-        margin-left: 10px;
+        margin-left: 5%;
     }
     #css{
-        margin-left: 10px;
+        margin-left: 5%;
     }
     
     /*------------certifications---------*/
